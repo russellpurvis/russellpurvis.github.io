@@ -1,1 +1,6 @@
-document.getElementById('year').innerText = new Date().getFullYear()
+const currentDate = new Date();
+console.log(currentDate);
+
+const currentYear = currentDate.getFullYear();
+console.log(currentYear);
+document.getElementById("currentYear").innerHTML = currentYear;

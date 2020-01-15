@@ -1,22 +1,23 @@
- img {
+ header img {
     height: 150px;
     float: right;
     margin-top: 10px;
     margin-right: 10px !important;
 }
 header {
-background-color: rgb(115, 59, 167);
-color: black;
+background-color: rgb(122, 74, 74);
+color: rgb(0, 0, 0);
 height: 100px;
 }
+
 footer{
-    background-color: rgb(115, 59, 167);
-    color: black;
-    height: 80px;
+    background-color: rgb(122, 74, 74);
+    color: rgb(0, 0, 0);
+    height: 40px;
 }
 body{
-    background-color: rgb(134, 133, 133);
-    color: black;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     width: 80%;
     text-align: center;
     margin-left: auto;
@@ -28,4 +29,7 @@ ul{
 footer div {
     margin-top: auto;
     margin-bottom: auto;
+}
+.georgia {
+ font-style: georgia;
 }
