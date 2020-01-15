@@ -5,13 +5,13 @@
     margin-right: 10px !important;
 }
 header {
-background-color: rgb(255, 147, 236);
+background-color: rgb(255, 255, 255);
 color: rgb(0, 0, 0);
 height: 100px;
 }
 
 footer{
-    background-color: rgb(255, 147, 236);
+    background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     height: 40px;
 }
