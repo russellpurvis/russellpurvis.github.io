@@ -1,6 +1,5 @@
  header img {
     height: 150px;
-    float: right;
     margin-top: 10px;
     margin-right: 10px !important;
 }
@@ -32,4 +31,7 @@ footer div {
 }
 .italic {
  font-style: italic;
+}
+h1 {
+    font-family: 'Libre Caslon Text', serif;
 }

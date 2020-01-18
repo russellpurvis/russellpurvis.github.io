@@ -1,0 +1,34 @@
+
+@media only screen and (min-width: 64em) {
+    /* html */
+
+    header {
+        padding-left: 90%;
+    }
+
+    h1 {
+        font-size: 5xem;
+        max-width: 100%
+    }
+    
+    /* class */
+
+    .head {
+        padding-top: 4em;
+        padding-bottom: 2em;
+        padding-left: 4em;
+    }
+   
+
+    /* id */
+    #grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 4em;
+    }
+
+
+
+
+
+}
