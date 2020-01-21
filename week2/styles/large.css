@@ -17,6 +17,7 @@
         padding-top: 4em;
         padding-bottom: 2em;
         padding-left: 4em;
+        max-width: auto;
     }
    
 
@@ -26,8 +27,6 @@
         grid-template-columns: 1fr 1fr 1fr;
         padding: 4em;
     }
-
-
 
 
 
