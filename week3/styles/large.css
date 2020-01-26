@@ -1,6 +1,6 @@
-
-.flex {
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
+@media only screen and (min-width: 32.5em) {
+    ul.flex {
+        flex-direction: row; 
+        justify-content: space-evenly;
+    }
 }

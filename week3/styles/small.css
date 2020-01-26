@@ -1,8 +1,110 @@
+html {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+h1,h2,h3 {
+    font-family: 'Libre Baskerville', serif;
+}
+h1 {
+    font-size: 3.5em;
+}
+h2 {
+    font-size: 2.5em;
+}
+h3 {
+    font-size: 2em;
+}
+h4 p,a {
+    font-family: 'Mukta', sans-serif;
+}
+h4 {
+    font-size: 1.5em;
+}
+p, p a {
+    font-size: 1em;
+}
+a {
+    font-size: 1.5em;
+    text-decoration: none;
+}
 ul {
     list-style: none;
 }
 
-ul li a {
-    text-decoration: none;
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 13px;
+    background-color: #acdbdf;
+}
+header p {
+    margin-top: -30px;
+}
+header h1 {
+    margin-top: 10px;
+}
+header a:link {
+    color: #69779b;
+}
+header a:visited {
+    color: #69779b;
+}
+header a:hover {
+    color: #ffffff;
+}
+header a:active {
+    color: #d7eaea;
+}
+main a {
+    color: #9142eb;
+}
+main p {
+    margin-top: 10px;
+}
+main h2, main h3, main p {
+    text-align: center;
+}
+#ta img, .wide {
+    width: 90%;
+    margin-top: -50px;
+}
+#ta p {
+    line-height: 2em;
+}
+#ta div p {
+    line-height: 1em;
+    width: 600px;
+}
+.bullets {
+    list-style: armenian;
+}
+main {
+    margin-bottom: 100px;
 }
 
+#gray {
+    color: white;
+    background: #88A096;
+    padding: 20px 30px;
+}
+#jungle {
+    color: white;
+    background: #16302B;
+    padding: 20px 30px;
+}
+#deer {
+    color: white;
+    background: #C08552;
+    padding: 20px 30px;
+}
+#sea {
+    color: white;
+    background: #98E2C6;
+    padding: 20px 30px;
+}
+#black {
+    color: white;
+    background: #000000;
+    padding: 20px 30px;
+}
