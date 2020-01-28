@@ -26,6 +26,8 @@ p, p a {
 a {
     font-size: 1.5em;
     text-decoration: none;
+    padding-left: 3em;
+    padding-right: 3em;
 }
 ul {
     list-style: none;
