@@ -70,14 +70,14 @@ main p {
 main h2, main h3, main p {
     text-align: center;
 }
-#ta img, .wide {
+#mta img, .wide {
     width: 90%;
     margin-top: -50px;
 }
-#ta p {
+#mta p {
     line-height: 2em;
 }
-#ta div p {
+#mta div p {
     line-height: 1em;
     width: 600px;
 }
