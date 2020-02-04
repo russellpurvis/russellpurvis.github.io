@@ -1,8 +1,16 @@
-@media only screen and (min-width: 32.5em) and (max-width: 700px) {
-    ul.flex {
-        flex-wrap: wrap;
+
+@media only screen and (min-width: 32.5em) {
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
     }
-    ul.flex li {
-        padding: 0 10px;
+
+    .navigation li:first-child {
+		display: none;
+    }
+    
+    .navigation li {
+        display: block;
     }
 }
