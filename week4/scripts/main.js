@@ -63,7 +63,7 @@ document.querySelector('#current-date').textContent = fullDate;
 /* Hamburger*/
 
 
-const hambutton = document.querySelector(".hamburger");
+const hambutton = document.querySelector(".ham");
 hambutton.addEventListener("click", toggleMenu, false);
 
 function toggleMenu() {
