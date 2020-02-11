@@ -4,9 +4,15 @@ body {
     background-color: #fffefe;
 }
 
+ul {
+    list-style: none;
+}
+
 ul li a {
     text-decoration: none;
     color: whitesmoke;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 header {
@@ -65,23 +71,76 @@ main {
     align-items: center;
 }
 
+
+table, tr, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+.weather-summary {
+    position: absolute;
+    top: 500px;
+    left: 25px;
+    background-color: white;
+    opacity: .7;
+    padding: 10px;
+}
+
+#fiveDay {
+    display: none;
+}
+
+#article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+
+}
+
+#contact {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+#summary {
+    width: 100%;
+}
+#town {
+    width: 100%;
+}
+#map {
+    width: 100%;
+    display: none;
+}
+
+
+
+
 section {
     padding: 12px;
-    -webkit-box-shadow:0px 0px 25px 5px #8a1d1d inset ;
-    -moz-box-shadow:0px 0px 25px 5px #8a1d1d inset ;
-    box-shadow:0px 0px 25px 5px #8a1d1d inset ;
+    -webkit-box-shadow:0px 0px 25px 5px grey inset ;
+    -moz-box-shadow:0px 0px 25px 5px grey inset ;
+    box-shadow:0px 0px 25px 5px grey inset ;
     
     margin-top: 10px;
 }
 
+.active {
+    background-color: steelblue;
+}
+
 a:active {
-    color: #d7eaea;
+    color: #ff8989;
     text-align: center;
     display: inline-block;
 }
 
 a:hover {
-    color: #ffffff;
+    color: #a0a0a0;
     text-align: center;
     display: inline-block;
     

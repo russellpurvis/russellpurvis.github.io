@@ -13,4 +13,9 @@
     .navigation li {
         display: block;
     }
+
+
+    .weather-summary {
+        left: 500px;
+    }
 }
