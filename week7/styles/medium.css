@@ -1,0 +1,29 @@
+/* tablet/IPad screen */
+
+@media only screen and (min-width: 32.5em) {
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .navigation li:first-child {
+		display: none;
+    }
+    
+    .navigation li {
+        display: block;
+    }
+
+    iframe{
+        display: block;
+    }
+
+    #five-day-forecast {
+        display: block;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}

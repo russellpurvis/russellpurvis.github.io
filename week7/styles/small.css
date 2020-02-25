@@ -23,6 +23,20 @@ header {
     align-items: center;
 }
 
+h1, h3, figcaption{
+    text-align: center;
+}
+
+figcaption {
+    font-size: 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    border: none;
+}
+
 header img {
     max-width: 6em;
     padding: 10px;
@@ -31,6 +45,9 @@ header img {
 header h2 {
     padding-top: .5em;
 }
+
+
+
 
 ul {
     list-style: none;
@@ -44,15 +61,13 @@ ul {
     color: whitesmoke;
 }
 
-ul,
-h1,
-h2 {
+ul,h1,h2 {
     font-family: 'Libre Baskerville', serif;
     color: #1D488A;
 }
 
 h3,
-p {
+p, figcaption {
     font-family: 'Mukta', sans-serif;
 }
 
@@ -173,6 +188,15 @@ footer {
     display: block;
 }
 
+img[data-src] {
+    filter: blur(0.1em);
+}
+
+img {
+    filter: blur(0em);
+    transition: filter 1s;
+}
+
 .navigation li {
     display: none;
 }
@@ -184,6 +208,22 @@ footer {
 .header {
     margin-right: 7em;
     padding: 5px;
+}
+
+
+.grid-main {
+    margin: 0 auto;
+    max-width: 1820px;
+}
+
+.gallery img {
+    width: 100%;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    border: none;
 }
 
 /* id selector */
