@@ -1,0 +1,53 @@
+article{
+    background-color: rgb(150, 191, 238);
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    border-style: solid;
+    border-color: rgb(107, 60, 184);
+    font-family: 'Playfair Display', serif;
+}
+
+footer{
+    text-align: center;
+    padding: 15px;
+    color: rgb(87, 32, 189);
+    font-size: 15pt;
+    font-family: 'Playfair Display', serif;
+    
+}
+
+main{
+    box-shadow: 0 0 20px #333;
+}
+
+h1{
+    color: rgb(106, 58, 196) ;
+    font-family: 'Playfair Display', serif;
+}
+
+header{
+    text-align: center;
+    color: rgb(66, 33, 145);
+    font-weight: bolder;
+}
+
+img{
+    max-width: 200px;
+    max-height: 200px ;
+    box-shadow: 0 0 20px #333;
+}
+
+@media only screen and (min-width:32.5em){
+    section{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 60em){
+    section{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
