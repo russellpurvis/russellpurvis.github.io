@@ -1,0 +1,40 @@
+/* desktop/laptop screen */
+
+@media only screen and (min-width: 64em) {
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .navigation li:first-child {
+		display: none;
+    }
+    
+    .navigation li {
+        display: block;
+    }
+
+    iframe{
+        display: block;
+    }
+
+    #five-day {
+        display: block;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    figure:hover {
+        box-shadow: 2px 4px 8px 1px #82746B, 1px 6px 20px 2px #82746B;
+    }
+    
+    .home {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .weather-summary {
+        left: 500px;
+    }
+}

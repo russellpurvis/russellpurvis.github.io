@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Preston</title>
+        <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Mukta&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/small.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/large.css">
+        <link rel="shortcut icon" href="/favicon.ico">
+    </head>
+
+<body>
+    <header>
+        <img src="images/weather-ninja.png" alt="weather logo">
+        <div class="header">
+            <h1 id="website">The Weather Ninja</h1>
+            <h2>WHAT WILL YOU WEAR TO PASS BY UNSEEN?</h2>
+        </div>
+       
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a class="ham">&equiv; Menu</a></li>
+            <li>
+                <a href="index.html" class="active">Home</a>
+            </li>
+            <li>
+                <a href="../week6/preston-6.html">Preston</a>
+            </li>
+            <li>
+                <a href="#">Soda Springs</a>
+            </li>
+            <li>
+                <a href="#">Fish Haven</a>
+            </li>
+            <li>
+                <a href="/week8/stormcenter.html">Storm Center</a>
+            </li>
+            <li>
+                <a href="../week7/gallery-7.html">Gallery</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="grid">
+        <h1 id="preston">Home</h1>
+        <section class="home">
+           <article>
+               <h1 id="fish-name">Fish Haven</h1>
+               <h2 id="fish-motto">This is Fish Heaven.</h2>
+               <p id="fish-founded">Year Founded: 1864</p>
+               <p id="fish-population">Population: 501</p>
+               <p id="fish-annual-rain">Annual Rainfall: 14.2</p>
+                <p>
+                    <img src="images/fish-haven.jpg" alt="Fish Haven" id="fish-haven-img">
+                </p>
+           </article>
+           <article>
+                <h1 id="preston-name">Preston</h1>
+                <h2 id="preston-motto">Home of Napoleon Dynamite.</h2>
+                <p id="preston-founded">Year Founded: 1866</p>
+                <p id="preston-population">Population: 5204</p>
+                <p id="preston-annual-rain">Annual Rainfall: 16.65</p>
+                <p>
+                    <img src="images/preston.jpg" alt="Preston" id="preston-img">
+                </p>
+           </article>
+           <article>
+                <h1 id="soda-springs-name">Soda Springs</h1>
+                <h2 id="soda-springs-motto">Historic Oregon Trail Oasis. The Soda is on Us.</h2>
+                <p id="soda-springs-founded">Year Founded: 1858</p>
+                <p id="soda-springs-population">Population: 2985</p>
+                <p id="ssoda-springs-annual-rain">Annual Rainfall: 15.75</p>
+                <p>
+                    <img src="images/soda-springs.jpg" alt="Soda Springs" id="soda-springs-img">
+                </p>
+           </article>
+        </section>
+    </main>
+
+    <footer>
+        &copy; The Weather Ninja | <span id="current-date"></span> | John Purvis
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/towns.json"></script>
+
+</body>
+
+</html>
