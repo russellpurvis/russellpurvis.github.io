@@ -78,6 +78,10 @@ table, tr, th, td {
     padding: 5px;
 }
 
+th {
+    background-color: rgb(97, 187, 194);
+    color: white;
+  }
 
 
 .weather-summary {
