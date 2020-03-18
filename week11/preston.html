@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Preston</title>
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Mukta&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="shortcut icon" href="/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <aside class="pancakes" style="display: none;">
+            <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion</p>
+        </aside>
+        <img src="images/weather-ninja.png" alt="weather logo">
+        <div class="header">
+            <h1 id="website">The Weather Ninja</h1>
+            <h2>WHAT WILL YOU WEAR TO PASS BY UNSEEN?</h2>
+        </div>
+
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a class="ham">&equiv; Menu</a></li>
+            <li>
+                <a href="/week9/index.html">Home</a>
+            </li>
+            <li>
+                <a href="preston.html" class="active">Preston</a>
+            </li>
+            <li>
+                <a href="#">Soda Springs</a>
+            </li>
+            <li>
+                <a href="#">Fish Haven</a>
+            </li>
+            <li>
+                <a href="/week8/stormcenter.html">Storm Center</a>
+            </li>
+            <li>
+                <a href="../week7/gallery.html">Gallery</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <h1 id="preston">Preston</h1>
+        <section id="hero">
+            <picture>
+                <source srcset="images/hero-small.jpg" media="(max-width: 500px)" >
+                <source srcset="images/hero-medium.jpg" media="(max-width: 780px)">
+                <source srcset="images/hero-large.jpg" media="(max-width: 1050px)">
+                <img src="images/hero-large.jpg" alt="hero image" id="summary">
+            </picture>
+           
+            <article class="weather-summary">
+                <h2>Weather Summary</h2>
+                <div>
+                    <span id="weatherDesc"></span>
+                    <img id="weatherImg" src="" alt="" >
+                </div>
+                <div>
+                    <span>Current Temperature:</span>
+                    <span id="current-temp"></span>
+                </div>
+                <div>
+                    <span>Wind Speed:</span>
+                    <span id="wind-speed"></span>
+                </div>
+                <div>
+                    <span>Humidity:</span>
+                    <span id="humidity"></span>
+                </div>
+                <div>
+                    <span>Wind Chill:</span>
+                    <span id="windChill"></span>
+                </div>
+            </article>
+        </section>
+        <section id="fiveDay">
+            <table>
+                <tr>
+                    <th colspan="5">Five Day Forecast</th>
+                </tr>
+                <tr>
+                    <td id="day1"></td>
+                    <td id="day2"></td>
+                    <td id="day3"></td>
+                    <td id="day4"></td>
+                    <td id="day5"></td>
+                </tr>
+                <tr>
+                    <td><img id="img1" src="" alt=""></td>
+                    <td><img id="img2" src="" alt=""></td>
+                    <td><img id="img3" src="" alt=""></td>
+                    <td><img id="img4" src="" alt=""></td>
+                    <td><img id="img5" src="" alt=""></td>
+                </tr>
+                <tr>
+                    <td id="temp1"></td>
+                    <td id="temp2"></td>
+                    <td id="temp3"></td>
+                    <td id="temp4"></td>
+                    <td id="temp5"></td>
+                </tr>
+            </table>
+        </section>
+        <section id="article">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur amet a facilis vitae saepe ad at
+                laudantium? Nam perferendis nemo voluptatem inventore aliquid mollitia, esse debitis expedita
+                doloremque! Unde, voluptas.</p>
+            <img src="images/preston.jpg" alt="preston" id="town">
+        </section>
+        <section id="contact">
+            <iframe id="map"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d35525.94677079673!2d-111.9025676!3d42.0968563!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e1!3m2!1sen!2sus!4v1581010192298!5m2!1sen!2sus"
+                width="40" style="border:0;" allowfullscreen=""></iframe>
+            <address>
+                The Weather Ninja<br>
+                3168 E Riverdale RD<br>
+                Preston, ID 83263<br>
+                203-555-7878<br>
+                weatherninj@cmail.com
+            </address>
+        </section>
+    </main>
+
+    <footer>
+        &copy; The Weather Ninja | <span id="current-date"></span> | John Purvis
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="scripts/main.js"></script>
+
+</body>
+
+
+</html>

@@ -1,0 +1,226 @@
+/* html selectors */
+
+body {
+    background-color: #fffefe;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+header {
+    max-width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+header img {
+    max-width: 6em;
+    padding: 10px;
+}
+
+header h2 {
+    padding-top: .5em;
+}
+
+ul {
+    list-style: none;
+    background-color: #1D488A;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    color: whitesmoke;
+}
+
+ul,
+h1,
+h2 {
+    font-family: 'Libre Baskerville', serif;
+    color: #1D488A;
+}
+
+h3,
+p {
+    font-family: 'Mukta', sans-serif;
+}
+
+ul li {
+    padding: 10px;
+}
+
+h1,
+h3 {
+    text-align: center;
+}
+
+main {
+    max-width: 1050px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+
+table, tr, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+
+
+.weather-summary {
+    position: absolute;
+    top: 500px;
+    left: 25px;
+    background-color: white;
+    opacity: .7;
+    padding: 10px;
+}
+
+#weather-summary img {
+    width: 40%;
+    padding: 0px;
+    margin: 0;
+}
+
+#fiveDay {
+    display: none;
+}
+
+form {
+    align-items: center;
+}
+
+label {
+    display: inline-block;
+    clear: left;
+    width: 150px;
+    text-align: right;
+    padding: 10px 10px 10px 0;
+}
+
+input, select {
+    display: inline-block;
+    padding: 3px 3px 3px 0;
+    margin: 10px;
+}
+
+input[type=submit], input[type=reset] {
+    margin-top: 15px;
+    cursor: pointer;
+    padding: 8px 8px;
+    background-color: #9D866B;
+    width: 80px;
+}
+
+#article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+
+}
+
+#contact {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+#summary {
+    width: 100%;
+}
+#town {
+    width: 100%;
+}
+#map {
+    width: 100%;
+    display: none;
+}
+
+
+
+
+section {
+    padding: 12px;
+    margin-top: 10px;
+}
+
+.active {
+    background-color: steelblue;
+}
+
+a:active {
+    color: #ff8989;
+    text-align: center;
+    display: inline-block;
+}
+
+a:hover {
+    color: #a0a0a0;
+    text-align: center;
+    display: inline-block;
+    
+}
+
+header a:link {
+    color: whitesmoke;
+}
+
+header a:visited {
+    color: whitesmoke;
+}
+
+
+
+footer {
+    background-color: #1D488A;
+    height: 80px;
+    text-align: center;
+    padding-top: 30px;
+    color: whitesmoke;
+}
+
+
+
+
+
+
+/* class selectors */
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li {
+    display: none;
+}
+
+.responsive li {
+    display: block;
+}
+
+.header {
+    margin-right: 7em;
+    padding: 5px;
+}
+
+/* id selector */
+
+#website {
+    font-size: 40px;
+    text-shadow: 2px 2px 3px rgb(100, 100, 100);
+}

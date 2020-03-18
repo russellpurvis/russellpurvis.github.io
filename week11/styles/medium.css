@@ -1,0 +1,48 @@
+
+@media only screen and (min-width: 32.5em) {
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .flex {
+        display: flex;
+    }
+
+    .navigation li:first-child {
+		display: none;
+    }
+    
+    .navigation li {
+        display: block;
+    }
+
+    #contact {
+        flex-direction: row;
+    }
+    #article {
+        flex-direction: row;
+    }
+    #contact {
+        flex-direction: row;
+    }
+    #summary {
+        width: 100%;
+    }
+    .weather-summary {
+        left: 150px;
+    }
+    #fiveDay {
+        display: block;
+    }
+    #table {
+        width: 100%;
+    }
+    #map {
+        width: 40%;
+        display: flex;
+    }
+    #town {
+        width: 40%;
+    }
+}
