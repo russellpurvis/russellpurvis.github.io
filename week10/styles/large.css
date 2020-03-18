@@ -1,0 +1,24 @@
+
+@media only screen and (min-width: 64em) {
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .navigation li:first-child {
+		display: none;
+    }
+    
+    .navigation li {
+        display: block;
+    }
+
+    #fiveDay {
+        display: block;
+    }
+
+    .weather-summary {
+        left: 500px;
+    }
+}
