@@ -134,6 +134,7 @@ input[type=submit], input[type=reset] {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-start;
+    background-color: rgb(179, 191, 202)
 
 }
 
@@ -142,6 +143,7 @@ input[type=submit], input[type=reset] {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-start;
+    background-color: rgb(139, 173, 182);
 }
 
 #summary {
