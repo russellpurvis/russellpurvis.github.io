@@ -247,6 +247,18 @@ footer {
     border: none;
 }
 
+#gallery .navigation li:first-child {
+    display: block;
+}
+
+#gallery .navigation li {
+    display: none;
+}
+
+#gallery .responsive li {
+    display: block;
+}
+
 
 /*----------preston----------*/
 #preston th {

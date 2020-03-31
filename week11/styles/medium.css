@@ -59,11 +59,11 @@
     display: block;
 }
 
-.navigation li:first-child {
+#gallery .navigation li:first-child {
     display: none;
 }
 
-.navigation li {
+#gallery .navigation li {
     display: block;
 }
 
