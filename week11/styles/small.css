@@ -127,7 +127,10 @@ table, tr, th, td {
 }
 
 
-
+.responsive {
+    width: 100%;
+    height: auto;
+  }
 
 section {
     padding: 12px;
