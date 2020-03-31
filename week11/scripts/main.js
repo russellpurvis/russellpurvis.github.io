@@ -96,7 +96,7 @@ WebFont.load({
 function getCurrentWeather(cityId) {
 
 // hero weather data
-const apiURL = "https://api.openweathermap.org/data/2.5/weather?idd=" + cityId + "&appid=1b50046f08bbcd80c7376317a6f66215&units=imperial";
+const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=" + cityId + "&appid=1b50046f08bbcd80c7376317a6f66215&units=imperial";
 
 fetch(apiURL)
   .then((response) => response.json())
