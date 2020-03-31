@@ -93,8 +93,10 @@ WebFont.load({
   });
 
 
+function getCurrentWeather(cityId) {
+
 // hero weather data
-const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=1b50046f08bbcd80c7376317a6f66215&units=imperial";
+const apiURL = "https://api.openweathermap.org/data/2.5/weather?idd=" + cityId + "&appid=1b50046f08bbcd80c7376317a6f66215&units=imperial";
 
 fetch(apiURL)
   .then((response) => response.json())
@@ -122,10 +124,12 @@ fetch(apiURL)
     document.querySelector('#weatherImg').setAttribute('src', imgURL);
     document.querySelector('#weatherImg').setAttribute('alt', jsObject.weather[0].main);
   });
+}
 
+function getFiveDayForecast(cityId) {
 
   // five day forecast data
-const apiURL2 = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=1b50046f08bbcd80c7376317a6f66215&units=imperial";
+const apiURL2 = "https://api.openweathermap.org/data/2.5/forecast?id=" + cityId + "&appid=1b50046f08bbcd80c7376317a6f66215&units=imperial";
 
 fetch(apiURL2)
   .then((response) => response.json())
@@ -151,3 +155,9 @@ fetch(apiURL2)
         );
     }
   );
+}
+
+  // adjust rating
+function adjustRating(rating) {
+    document.querySelector('#rating').textContent = rating;
+}

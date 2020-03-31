@@ -21,4 +21,94 @@
     .weather-summary {
         left: 500px;
     }
+
+
+
+/*-------------Gallery-----------*/
+
+
+#gallery iframe{
+    display: block;
+}
+
+#gallery .gallery {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#gallery figure:hover {
+    box-shadow: 2px 4px 8px 1px #82746B, 1px 6px 20px 2px #82746B;
+}
+
+}
+
+/*------------Storm Center------------*/
+
+@media only screen and (min-width: 64em) {
+    #stormcenter ul {
+         display: flex;
+         flex-direction: row;
+         justify-content: space-evenly;
+     }
+ 
+     #stormcenter .navigation li:first-child {
+         display: none;
+     }
+     
+     #stormcenter .navigation li {
+         display: block;
+     }
+ 
+     #stormcenter iframe{
+         display: block;
+     }
+ 
+     #stormcenter .gallery {
+         grid-template-columns: 1fr 1fr 1fr;
+     }
+ 
+     #stormcenter figure:hover {
+         box-shadow: 2px 4px 8px 1px #82746B, 1px 6px 20px 2px #82746B;
+     }
+ }
+
+
+ /*------------------index--------------------*/
+
+ @media only screen and (min-width: 64em) {
+    #index ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    #index .navigation li:first-child {
+		display: none;
+    }
+    
+    #index .navigation li {
+        display: block;
+    }
+
+    #index iframe{
+        display: block;
+    }
+
+    #index #five-day {
+        display: block;
+    }
+
+    #index .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #index figure:hover {
+        box-shadow: 2px 4px 8px 1px #82746B, 1px 6px 20px 2px #82746B;
+    }
+    
+    #index .home {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #index .weather-summary {
+        left: 500px;
+    }
 }

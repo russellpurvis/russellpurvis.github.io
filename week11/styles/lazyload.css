@@ -1,0 +1,12 @@
+#lazyload img[data-src] {
+    filter: blur(0.1em);
+  }
+  
+  #lazyload img {
+    filter: blur(0em);
+    transition: filter 1s;
+  }
+
+  #lazyload picture {
+    display: grid;
+}
