@@ -177,7 +177,16 @@ footer {
 }
 
 
+#preston table {
+    margin: auto;
+}
+#sodasprings table {
+    margin: auto;
+}
 
+#fishhaven table {
+    margin: auto;
+}
 
 /* class selectors */
 
