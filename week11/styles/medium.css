@@ -59,6 +59,13 @@
     display: block;
 }
 
+.navigation li:first-child {
+    display: none;
+}
+
+.navigation li {
+    display: block;
+}
 
 #gallery .gallery {
     grid-template-columns: 1fr 1fr;
@@ -79,6 +86,11 @@
 
     #stormcenter .gallery {
         grid-template-columns: 1fr 1fr;
+    }
+    #stormcenter ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
     }
 }
 

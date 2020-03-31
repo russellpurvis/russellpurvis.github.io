@@ -39,6 +39,14 @@
     box-shadow: 2px 4px 8px 1px #82746B, 1px 6px 20px 2px #82746B;
 }
 
+#gallery .navigation li:first-child {
+    display: none;
+}
+
+#gallery .navigation li {
+    display: block;
+}
+
 }
 
 /*------------Storm Center------------*/
