@@ -1,0 +1,603 @@
+/* html selectors */
+
+body {
+    background-color: #fffefe;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+header {
+    max-width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+header img {
+    max-width: 6em;
+    padding: 10px;
+}
+
+header h2 {
+    padding-top: .5em;
+}
+
+h1,
+h3 {
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    background-color: #1D488A;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    color: whitesmoke;
+}
+
+ul,
+h1,
+h2 {
+    font-family: 'Libre Baskerville', serif;
+    color: #1D488A;
+}
+
+h3,
+p {
+    font-family: 'Mukta', sans-serif;
+}
+
+ul li {
+    padding: 10px;
+}
+
+
+main {
+    max-width: 1050px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+
+table, tr, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+
+
+
+.weather-summary {
+    position: absolute;
+    top: 500px;
+    left: 25px;
+    background-color: white;
+    opacity: .7;
+    padding: 10px;
+}
+
+
+
+#fiveDay {
+    display: none;
+}
+
+
+#article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    background-color: rgb(179, 191, 202)
+
+}
+
+#contact {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    background-color: rgb(139, 173, 182);
+}
+
+#summary {
+    width: 100%;
+}
+#town {
+    width: 100%;
+}
+#map {
+    width: 100%;
+    display: none;
+}
+
+
+.responsive {
+    width: 100%;
+    height: auto;
+  }
+
+section {
+    padding: 12px;
+    margin-top: 10px;
+}
+
+.active {
+    background-color: steelblue;
+}
+
+a:active {
+    color: #ff8989;
+    text-align: center;
+    display: inline-block;
+}
+
+a:hover {
+    color: #a0a0a0;
+    text-align: center;
+    display: inline-block;
+    
+}
+
+header a:link {
+    color: whitesmoke;
+}
+
+header a:visited {
+    color: whitesmoke;
+}
+
+
+
+footer {
+    background-color: #1D488A;
+    height: 80px;
+    text-align: center;
+    padding-top: 30px;
+    color: whitesmoke;
+}
+
+#events {
+    color:white;
+}
+
+
+#preston table {
+    margin: auto;
+}
+#sodasprings table {
+    margin: auto;
+}
+
+#fishhaven table {
+    margin: auto;
+}
+
+/* class selectors */
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li {
+    display: none;
+}
+
+.responsive li {
+    display: block;
+}
+
+.header {
+    margin-right: 7em;
+    padding: 5px;
+}
+
+/* id selector */
+
+#website {
+    font-size: 40px;
+    text-shadow: 2px 2px 3px rgb(100, 100, 100);
+}
+
+
+
+/*-------gallery-------*/
+
+#gallery figcaption {
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Mukta', sans-serif;
+}
+
+#gallery .gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    border: none;
+}
+
+#gallery img[data-src] {
+    filter: blur(0.1em);
+}
+
+#gallery img {
+    filter: blur(0em);
+    transition: filter 1s;
+}
+
+#gallery .navigation li {
+    display: none;
+}
+
+
+#gallery .grid-main {
+    margin: 0 auto;
+    max-width: 1820px;
+}
+
+#gallery .gallery img {
+    width: 100%;
+}
+
+#gallery .gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    border: none;
+}
+
+#gallery .navigation li:first-child {
+    display: block;
+}
+
+#gallery .navigation li {
+    display: none;
+}
+
+#gallery .responsive li {
+    display: block;
+}
+
+
+/*----------preston----------*/
+#preston th {
+    background-color: rgb(97, 187, 194);
+    color: white;
+  }
+
+ #preston #weather-summary img {
+    width: 40%;
+    padding: 0px;
+    margin: 0;
+}
+
+
+#preston form {
+    align-items: center;
+}
+
+#preston label {
+    display: inline-block;
+    clear: left;
+    width: 150px;
+    text-align: right;
+    padding: 10px 10px 10px 0;
+}
+
+#preston input, #preston select {
+    display: inline-block;
+    padding: 3px 3px 3px 0;
+    margin: 10px;
+}
+
+#preston input[type=submit], #preston input[type=reset] {
+    margin-top: 15px;
+    cursor: pointer;
+    padding: 8px 8px;
+    background-color: #9D866B;
+    width: 80px;
+}
+
+
+
+
+
+/*----------Storm Center----------*/
+#stormcenter h3, #stormcenter p,#stormcenter td, #stormcenter span, #stormcenter address, #stormcenter figcaption, #stormcenter form{
+    font-family: 'Mukta', sans-serif;
+}
+
+#stormcenter h1,
+#stormcenter h3,
+#stormcenter figcaption{
+    text-align: center;
+}
+
+#stormcenter figcaption {
+    font-size: 20px;
+}
+
+#stormcenter main {
+    max-width: 1050px;
+    margin: 0 auto;
+    align-items: center;
+    display: grid;
+}
+
+#stormcenter section {
+    padding: 12px;
+    border: 2px dotted #9D866B;
+    margin-top: 10px;
+}
+
+#stormcenter a:active {
+    background-color: #a3b7af;
+    color: #ff8989;
+    padding: 6px 6px;
+    text-align: center;
+    display: inline-block;
+}
+
+#stormcenter a:hover {
+    color: #a0a0a0;
+    padding: 6px 6px;
+    text-align: center;
+    display: inline-block;
+}
+
+
+#stormcenter table {
+    margin-left: auto; 
+    margin-right: auto;
+    color: #82746B;
+}
+
+#stormcenter table, th, tr, td{
+    border: 1px solid black;
+    padding: 7px;
+    font-size: 20px;
+}
+
+#stormcenter table th {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#stormcenter iframe{
+    display: none;
+}
+
+#stormcenter aside {
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    background-color: #9D866B;
+    opacity: 0.67;
+    color: #f1f4f3;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#stormcenter form {
+    align-items: center;
+}
+
+#stormcenter label {
+    display: inline-block;
+    clear: left;
+    width: 150px;
+    text-align: right;
+    padding: 10px 10px 10px 0;
+}
+
+#stormcenter input, #stormcenter select {
+    display: inline-block;
+    padding: 3px 3px 3px 0;
+    margin: 10px;
+}
+
+#stormcenter input[type=submit], #stormcenter input[type=reset] {
+    margin-top: 15px;
+    cursor: pointer;
+    padding: 8px 8px;
+    background-color: #9D866B;
+    width: 80px;
+}
+
+
+#stormcenter img[data-src] {
+    filter: blur(0.1em);
+}
+  
+#stormcenter img {
+    filter: blur(0em);
+    transition: filter 1s;
+}
+
+#stormcenter .grid-main {
+    margin: 0 auto;
+    max-width: 1820px;
+}
+
+#stormcenter .gallery img {
+    width: 100%;
+}
+
+#stormcenter .gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    border: none;
+}
+
+#stormcenter #article img {
+    float: right;
+    margin: 0 0 1em 1em;
+    width: 280px;
+}
+
+
+
+/*-------------index------------*/
+
+#index figcaption{
+    text-align: center;
+    font-size: 20px;
+}
+
+#index td, #index span, #index address, #index figcaption, #index form{
+    font-family: 'Mukta', sans-serif;
+}
+
+#index table {
+    margin-left: auto; 
+    margin-right: auto;
+    color: #82746B;
+}
+
+#index table th {
+    font-family: 'Mukta', sans-serif;
+}
+
+#index iframe{
+    display: none;
+}
+
+#index aside {
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    background-color: #9D866B;
+    opacity: 0.67;
+    color: #f1f4f3;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#index form {
+    align-items: center;
+}
+
+#index label {
+    display: inline-block;
+    clear: left;
+    width: 150px;
+    text-align: right;
+    padding: 10px 10px 10px 0;
+}
+
+#index input, #index select {
+    display: inline-block;
+    padding: 3px 3px 3px 0;
+    margin: 10px;
+}
+
+#index input[type=submit], #index input[type=reset] {
+    margin-top: 15px;
+    cursor: pointer;
+    padding: 8px 8px;
+    background-color: #9D866B;
+    width: 80px;
+}
+
+#index article {
+    box-shadow: 0 0 15px 0 #9D866B;
+    border: ridge gray;
+}
+
+#index article img {
+    width: 100%;
+}
+
+
+#index img[data-src] {
+    filter: blur(0.1em);
+}
+  
+#index img {
+    filter: blur(0em);
+    transition: filter 1s;
+}
+
+#index .grid-main {
+    margin: 0 auto;
+    max-width: 1820px;
+}
+
+#index .gallery img {
+    width: 100%;
+}
+
+#index .gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    border: none;
+}
+
+#index .grid {
+    max-width: 1500px;
+}
+
+#index .home {
+    display: grid;
+    border: none;
+    grid-column-gap: 50px;
+    text-align: center;
+}
+
+#index #website {
+    font-size: 40px;
+    text-shadow: 2px 2px 3px #82746B;
+}
+
+#index #article img {
+    float: right;
+    margin: 0 0 1em 1em;
+    width: 280px;
+}
+
+#index #hero {
+    border: none;
+    position: relative;
+}
+
+#index #hero img {
+    width: 100%;
+    height: auto;
+}
+
+#index #weather-summary {
+    position: absolute;
+    top: 60px;
+    right: 60px;
+    background-color: #9D866B;
+    opacity: 0.67;
+    color: #f1f4f3;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#index #contact {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+#index #five-day {
+    display: none;
+}
+
+#index #fish-name, #index #preston-name, #index #soda-springs-name {
+    text-shadow: 2px 2px 3px #82746B;
+}

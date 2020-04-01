@@ -1,0 +1,130 @@
+
+@media only screen and (min-width: 32.5em) {
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .flex {
+        display: flex;
+    }
+
+    .navigation li:first-child {
+		display: none;
+    }
+    
+    .navigation li {
+        display: block;
+    }
+
+    #contact {
+        flex-direction: row;
+    }
+    #article {
+        flex-direction: row;
+    }
+    #contact {
+        flex-direction: row;
+    }
+    #summary {
+        width: 100%;
+    }
+    .weather-summary {
+        left: 150px;
+    }
+    #fiveDay {
+        display: block;
+        background-color: rgb(139, 173, 182);
+    }
+    #table {
+        width: 100%;
+    }
+    #map {
+        width: 40%;
+        display: flex;
+    }
+    #town {
+        width: 40%;
+    }
+
+
+
+/*-------------Gallery---------------*/
+
+#gallery iframe{
+    display: block;
+}
+
+#gallery #five-day-forecast {
+    display: block;
+}
+
+#gallery .navigation li:first-child {
+    display: none;
+}
+
+#gallery .navigation li {
+    display: block;
+}
+
+#gallery .gallery {
+    grid-template-columns: 1fr 1fr;
+}
+}
+
+
+/*------------Storm Center------------*/
+
+@media only screen and (min-width: 32.5em) {
+    #stormcenter iframe{
+        display: block;
+    }
+
+    #stormcenter #five-day-forecast {
+        display: block;
+    }
+
+    #stormcenter .gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+    #stormcenter ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
+
+/*-----------Index--------------*/
+
+@media only screen and (min-width: 32.5em) {
+    #index ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    #index .navigation li:first-child {
+		display: none;
+    }
+    
+    #index .navigation li {
+        display: block;
+    }
+
+    #index iframe{
+        display: block;
+    }
+
+    #index #five-day {
+        display: block;
+    }
+
+    #index .gallery {
+            grid-template-columns: 1fr 1fr;
+        }
+    
+        #index .home {
+            grid-template-columns: 1fr 1fr;
+            grid-row-gap: 25px;
+        }
+    }
