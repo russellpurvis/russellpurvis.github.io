@@ -16,7 +16,7 @@
     <link rel="shortcut icon" href="/favicon.ico">
 </head>
 
-<body id="temple" onload="getEvents('Logan'); getCurrentWeather('5777544')">
+<body id="temple">
     <header>
         <a href="index.html"><img src="images/temple-logo.png" alt="temple logo"> </a>
         <div class="header">
@@ -44,7 +44,7 @@
         <h1>What are some temples near our locations? <br>
 
         </h1>
-        <section id="logan">
+        <section id="Logan" onload="getEvents('Logan'); getCurrentWeather('5777544')">
 
                 <img src="images/logan-temple.jpg" alt="logan temple" class="responsive">
                 <h3>Logan Utah Temple</h3>
@@ -89,7 +89,8 @@ No distribution center nearby <br>
                         <li>2:30 PM-3:29 PM</li>
                         <li>3:30 PM-8:00 PM</li>
                     </ul>
-                    <section id="cityEvents"><h2>Temple Closure</h2>
+                    <section id="templeEvents">
+                        <h2>Temple Closure</h2>
                     <hr>
                     <ul id="events">
                     </ul>

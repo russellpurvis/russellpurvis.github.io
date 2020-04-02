@@ -1,12 +1,12 @@
-function getEvents(templeName){
-    fetch('https://russellpurvis.github.io/final/scripts/temples.json')
+function getEvents(cityName){
+    fetch('https://byui-cit230.github.io/weather/data/towndata.json')
         .then(result => result.json())
         .then(
             (result) => {
-                result.temples.forEach(
-                    temple => {
-                        if (temple.name.toLowerCase() === templeName.toLowerCase()) {
-                            temple.events.forEach(
+                result.towns.forEach(
+                    town => {
+                        if (town.name.toLowerCase() === cityName.toLowerCase()) {
+                            town.events.forEach(
                                 event => {
                                     let li = document.createElement('li');
                                     li.textContent = event;
