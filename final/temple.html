@@ -33,6 +33,7 @@
             <button class="dropbtn"><i class="fa fa-caret-down"></i> Services
             </button>
             <div class="dropdown-content">
+                <a href="#">Services</a>
                 <a href="#">Reception</a>
                 <a href="#">Full-time Temple Missionary</a>
             </div>
@@ -44,58 +45,13 @@
         <h1>What are some temples near our locations? <br>
 
         </h1>
-        <section id="Logan" onload="getEvents('Logan'); getCurrentWeather('5777544')">
-
-                <img src="images/logan-temple.jpg" alt="logan temple" class="responsive">
-                <h3>Logan Utah Temple</h3>
-                <p id="text"> 
-                    <h2>Address</h2>
-                   <address> 175 N 300 E <br>
-                    Logan UT 84321-4720 <br>
-                    United States <br> </address>
-                    <h2>Phone Number</h2>
-                    <a href="tel:+1435-752-3611">(1) 435-752-3611</a> <br>
-                    <h2>E-mail</h2>
-                    <a href="mailto:logantemple@church.com">logantemple@church.com</a> <br>
-                    <h2>Services</h2>
-                    Clothing rental available <br>
-Cafeteria available <br>
-No patron housing available <br>
-No distribution center nearby <br>
-                    <h2>History</h2>
-                    <b>Announced:</b> 6 October 1876 <br>
-                    <b>Groundbreaking:</b> 18 May 1877 <br>
-                    <b>Dedicated:</b> 17 May 1884 <br>
-                    <b>Rededicated:</b> 13 March 1979 <br>
-                    <h2>Ordinance Schedule</h2>
-                    <b>Baptism</b> <br>
-                    <ul>
-                        <li>
-                            5:30 AM-7:00 AM
-                        </li>
-                        <li>
-                            7:00 AM-7:30 PM
-                        </li>
-                    </ul>
-                    <b>Endowment</b>
-                    <ul>
-                        <li>Every Half hour from 5:30 AM to 7:30 PM</li>
-                    </ul>
-                    <b>Sealing</b>
-                    <ul>
-                        <li>7:00 AM-9:15 AM</li>
-                        <li>9:30 AM-12:45 PM</li>
-                        <li>1:00 PM-2:15 PM</li>
-                        <li>2:30 PM-3:29 PM</li>
-                        <li>3:30 PM-8:00 PM</li>
-                    </ul>
-                    <section id="cityEvents">
-                        <h2>Temple Closure</h2>
-                    <hr>
-                    <ul id="events">
-                    </ul>
-                </section>
-
+        <section class = "temple-container" id = "logan">
+            <h2>
+                Logan Utah Temple
+            </h2>
+            <div class ="temple-info">
+                <div class = "first-column">
+                    <img src="images/logan-temple.jpg" alt="Logan Temple Utah">
                     <article class="weather-summary">
                         <h2>Weather Summary</h2>
                         <div>
@@ -119,8 +75,55 @@ No distribution center nearby <br>
                             <span id="windChill"></span>
                         </div>
                     </article>
-                </p>
-
+                </div>
+                
+                <div class = "temple-data">
+                    <h3>
+                        Address
+                    </h3>
+                    <div class = "logan-utah-address"></div>
+                    <h3>
+                        Phone Number
+                    </h3>
+                    <div class = "logan-utah-phone"></div>
+                    <h3>
+                        Service
+                    </h3>
+                    <div class = "logan-utah-service"></div>
+                    <h3>
+                        Ordinance Schedule
+                    </h3>
+                    <h4>
+                        Baptism
+                    </h4>
+                    <ul class ="logan-utah-baptism">
+                        
+                    </ul>
+                    <h4>
+                        Endownment
+                    </h4>
+                    <ul class = "logan-utah-endownment">
+                    
+                    </ul>
+                    <h4>
+                        Sealing
+                    </h4>
+                    <ul class = "logan-utah-sealing">
+                        
+                    </ul>
+                    <h3>
+                        Temple Closure
+                    </h3>
+                    <ul class = "logan-utah-closure">
+                        
+                    </ul>
+                    <h3>
+                        Temple History
+                    </h3>
+                    <div class = "logan-utah-history"></div>
+                </div>
+            </div>
+            
         </section>
         <section>
             <div class="slideshow-container">
