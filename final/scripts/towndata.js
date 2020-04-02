@@ -1,5 +1,5 @@
 function getEvents(cityName){
-    fetch('https://byui-cit230.github.io/weather/data/towndata.json')
+    fetch('russellpurvis.github.io/final/scripts/towns.json')
         .then(result => result.json())
         .then(
             (result) => {
