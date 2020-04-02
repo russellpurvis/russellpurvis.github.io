@@ -16,7 +16,7 @@
     <link rel="shortcut icon" href="/favicon.ico">
 </head>
 
-<body id="temple"onload="getEvents('Preston'); getCurrentWeather('5604473'); getFiveDayForecast('5604473')">
+<body id="temple" onload="getEvents('Logan'); getCurrentWeather('5777544')">
     <header>
         <a href="index.html"><img src="images/temple-logo.png" alt="temple logo"> </a>
         <div class="header">
@@ -89,9 +89,11 @@ No distribution center nearby <br>
                         <li>2:30 PM-3:29 PM</li>
                         <li>3:30 PM-8:00 PM</li>
                     </ul>
-                    <h2>Temple Closure</h2>
-
-
+                    <section id="cityEvents"><h2>Temple Closure</h2>
+                    <hr>
+                    <ul id="events">
+                    </ul>
+                </section>
 
                     <article class="weather-summary">
                         <h2>Weather Summary</h2>
@@ -191,6 +193,7 @@ No distribution center nearby <br>
 
     </footer>
     <script src="scripts/main.js"></script>
+    <script src="scripts/templedata.js"></script>
     <script src="scripts/slide.js"></script>
 
 </body>

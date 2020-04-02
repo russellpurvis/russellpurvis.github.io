@@ -175,7 +175,10 @@ main {
 }
 
 
-
+/*.weather-summary {
+  color: white;
+  background-color: black;
+}*/
 
 #article {
     display: flex;

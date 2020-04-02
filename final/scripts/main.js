@@ -103,36 +103,7 @@ fetch(apiURL)
   });
 }
 
-function getFiveDayForecast(cityId) {
 
-  // five day forecast data
-const apiURL2 = "https://api.openweathermap.org/data/2.5/forecast?id=" + cityId + "&appid=1b50046f08bbcd80c7376317a6f66215&units=imperial";
-
-fetch(apiURL2)
-  .then((response) => response.json())
-  .then(
-    jsObject => {
-        let counter = 1;
-        jsObject.list.forEach(
-            forecast => {
-                if(forecast.dt_txt.includes('18:00')) {
-                    let forecastDate = new Date(forecast.dt_txt.replace(' ', 'T'));
-                    let dayOfWeek = daysOfWeek[forecastDate.getDay()];
-                    let imageURL = 'https://openweathermap.org/img/w/' + jsObject.list[counter].weather[0].icon + '.png';
-
-                    document.querySelector(`#day${counter}`).innerHTML = dayOfWeek;
-
-                    document.querySelector(`#temp${counter}`).innerHTML = forecast.main.temp.toFixed(0) + '&deg;' + 'F';
-
-                    document.querySelector(`#img${counter}`).setAttribute('src', imageURL);
-
-                    counter++;
-                }
-            }
-        );
-    }
-  );
-}
 
   // adjust rating
 function adjustRating(rating) {

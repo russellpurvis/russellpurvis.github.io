@@ -1,12 +1,12 @@
-function getEvents(cityName){
-    fetch('')
+function getEvents(templeName){
+    fetch('https://russellpurvis.github.io/final/scripts/temples.json')
         .then(result => result.json())
         .then(
             (result) => {
-                result.towns.forEach(
-                    town => {
-                        if (town.name.toLowerCase() === cityName.toLowerCase()) {
-                            town.events.forEach(
+                result.temples.forEach(
+                    temple => {
+                        if (temple.name.toLowerCase() === templeName.toLowerCase()) {
+                            temple.events.forEach(
                                 event => {
                                     let li = document.createElement('li');
                                     li.textContent = event;
