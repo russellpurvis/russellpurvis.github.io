@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Temple Inn & Suites</title>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&family=Merriweather&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="shortcut icon" href="/favicon.ico">
+</head>
+
+<body id="temple"onload="getEvents('Preston'); getCurrentWeather('5604473'); getFiveDayForecast('5604473')">
+    <header>
+        <a href="index.html"><img src="images/temple-logo.png" alt="temple logo"> </a>
+        <div class="header">
+            <h1 id="website">Temple Inn & Suites</h1>
+            <h2>Acommodations for a Spirit-Filled Day</h2>
+        </div>
+
+    </header>
+    <div class="topnav" id="myTopnav">
+        <a href="index.html"><i class="fa fa-fw fa-home"></i>Home</a>
+        <a href="temple.html" class="active"><i class="fa fa-fw fa-black-tie"></i>Temple</a>
+        <a href="#"><i class="fa fa-fw fa-paperclip"></i>Reservation</a>
+        <div class="dropdown">
+            <button class="dropbtn"><i class="fa fa-caret-down"></i> Services
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Reception</a>
+                <a href="#">Full-time Temple Missionary</a>
+            </div>
+        </div>
+        <a href="#"><i class="fa fa-fw fa-user"></i>Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+    <main>
+        <h1>What are some temples near our locations? <br>
+
+        </h1>
+        <section id="logan">
+
+                <img src="images/logan-temple.jpg" alt="logan temple" class="responsive">
+                <h3>Logan Utah Temple</h3>
+                <p id="text"> 
+                    <h2>Address</h2>
+                   <address> 175 N 300 E <br>
+                    Logan UT 84321-4720 <br>
+                    United States <br> </address>
+                    <h2>Phone Number</h2>
+                    <a href="tel:+1435-752-3611">(1) 435-752-3611</a> <br>
+                    <h2>E-mail</h2>
+                    <a href="mailto:logantemple@church.com">logantemple@church.com</a> <br>
+                    <h2>Services</h2>
+                    Clothing rental available <br>
+Cafeteria available <br>
+No patron housing available <br>
+No distribution center nearby <br>
+                    <h2>History</h2>
+                    <b>Announced:</b> 6 October 1876 <br>
+                    <b>Groundbreaking:</b> 18 May 1877 <br>
+                    <b>Dedicated:</b> 17 May 1884 <br>
+                    <b>Rededicated:</b> 13 March 1979 <br>
+                    <h2>Ordinance Schedule</h2>
+                    <b>Baptism</b> <br>
+                    <ul>
+                        <li>
+                            5:30 AM-7:00 AM
+                        </li>
+                        <li>
+                            7:00 AM-7:30 PM
+                        </li>
+                    </ul>
+                    <b>Endowment</b>
+                    <ul>
+                        <li>Every Half hour from 5:30 AM to 7:30 PM</li>
+                    </ul>
+                    <b>Sealing</b>
+                    <ul>
+                        <li>7:00 AM-9:15 AM</li>
+                        <li>9:30 AM-12:45 PM</li>
+                        <li>1:00 PM-2:15 PM</li>
+                        <li>2:30 PM-3:29 PM</li>
+                        <li>3:30 PM-8:00 PM</li>
+                    </ul>
+                    <h2>Temple Closure</h2>
+
+
+
+                    <article class="weather-summary">
+                        <h2>Weather Summary</h2>
+                        <div>
+                            <span id="weatherDesc"></span>
+                            <img id="weatherImg" src="" alt="" >
+                        </div>
+                        <div>
+                            <span>Current Temperature:</span>
+                            <span id="current-temp"></span>
+                        </div>
+                        <div>
+                            <span>Wind Speed:</span>
+                            <span id="wind-speed"></span>
+                        </div>
+                        <div>
+                            <span>Humidity:</span>
+                            <span id="humidity"></span>
+                        </div>
+                        <div>
+                            <span>Wind Chill:</span>
+                            <span id="windChill"></span>
+                        </div>
+                    </article>
+                </p>
+
+        </section>
+        <section>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 7</div>
+                    <img src="images/changing-room.jpg" style="width:100%">
+                    <div class="text">Free access to changing rooms and bathroom facilities</div>
+                  </div>
+                
+                  <div class="mySlides fade">
+                    <div class="numbertext">2 / 7</div>
+                    <img src="images/play-room.jpg" style="width:100%">
+                    <div class="text">Playroom with low-cost, short-term babysitting</div>
+                  </div>
+                
+                  <div class="mySlides fade">
+                    <div class="numbertext">3 / 7</div>
+                    <img src="images/kitchen.jpg" style="width:100%">
+                    <div class="text">Long-term kitchenette suites for temple missionaries</div>
+                  </div>
+                  <div class="mySlides fade">
+                    <div class="numbertext">4 / 7</div>
+                    <img src="images/reception.jpg" style="width:100%">
+                    <div class="text">Temple history themed reception and sitting area</div>
+                  </div>
+                  <div class="mySlides fade">
+                    <div class="numbertext">5 / 7</div>
+                    <img src="images/wedding-reception.jpg" style="width:100%">
+                    <div class="text">Wedding reception hall with simple catering menu and kitchen access </div>
+                  </div>
+                  <div class="mySlides fade">
+                    <div class="numbertext">6 / 7</div>
+                    <img src="images/family-history.jpg" style="width:100%">
+                    <div class="text">Family search center for family search or ordinance work</div>
+                  </div>
+                  <div class="mySlides fade">
+                    <div class="numbertext">7 / 7</div>
+                    <img src="images/pillow.jpg" style="width:100%">
+                    <div class="text">A mint on every pillow</div>
+                  </div>
+                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                    <span class="dot" onclick="currentSlide(7)"></span>
+                  </div>
+        </section>
+        <h3></h3>
+        <section id="article">
+            
+            <p>
+                The Temple is Centered in the Savior
+
+                Everything in the temple points us to Jesus Christ. As we participate in temple ordinances, we are assured that He is mindful of us. He is involved in our lives and He is dedicated to our eternal happiness. His presence can be felt as we strive to follow Him in our daily lives. As we draw closer to the Savior, we learn more about Him. His life provides a perfect pattern of righteousness and happiness for all of us.
+
+            </p>
+            <img src="images/index-temple.jpg" alt="temple" id="town">
+        </section>
+
+    </main>
+
+    <footer>
+        &copy; The Temple Inn & Suites | <span id="current-date"></span> | John Purvis | <a href="references">References</a>
+
+    </footer>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/slide.js"></script>
+
+</body>
+
+</html>

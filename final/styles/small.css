@@ -1,19 +1,125 @@
 /* html selectors */
 
-body {
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Add an active class to highlight the current page */
+  .active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+  
+  /* Dropdown container - needed to position the dropdown content */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Style the dropdown button to fit inside the topnav */
+  .dropdown .dropbtn {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  /* Style the dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Style the links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a dark background on topnav links and the dropdown button on hover */
+  .topnav a:hover, .dropdown:hover .dropbtn {
+    background-color: #555;
+    color: white;
+  }
+  
+  /* Add a grey background to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Show the dropdown menu when the user moves the mouse over the dropdown button */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child), .dropdown .dropbtn {
+      display: none;
+    }
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .topnav.responsive .dropdown {float: none;}
+    .topnav.responsive .dropdown-content {position: relative;}
+    .topnav.responsive .dropdown .dropbtn {
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  }
+
+  body {
     background-color: #fffefe;
 }
 
-ul {
-    list-style: none;
-}
-
-ul li a {
-    text-decoration: none;
-    color: whitesmoke;
-    padding-left: 10px;
-    padding-right: 10px;
-}
 
 header {
     max-width: 100%;
@@ -35,36 +141,32 @@ header h2 {
 h1,
 h3 {
     text-align: center;
+    color: #59a5d8;
 }
 
-ul {
-    list-style: none;
-    background-color: #1D488A;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    padding: 20px;
-    text-align: center;
-    font-size: 20px;
-    color: whitesmoke;
-}
-
-ul,
 h1,
 h2 {
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Merriweather', serif;
     color: #1D488A;
 }
 
-h3,
+h3 {
+    font-family: 'Crimson Text', serif;
+    font-weight: 300;
+    font-size: 2em;
+}
+
+
 p {
-    font-family: 'Mukta', sans-serif;
+    font-family: 'Crimson Text', serif;
+    font-size: 1em;
 }
 
-ul li {
-    padding: 10px;
-}
 
+p img {
+    padding-right: 5em;
+    padding-bottom: 3em;
+}
 
 main {
     max-width: 1050px;
@@ -73,29 +175,6 @@ main {
 }
 
 
-table, tr, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-    padding: 5px;
-}
-
-
-
-
-.weather-summary {
-    position: absolute;
-    top: 500px;
-    left: 25px;
-    background-color: white;
-    opacity: .7;
-    padding: 10px;
-}
-
-
-
-#fiveDay {
-    display: none;
-}
 
 
 #article {
@@ -103,7 +182,9 @@ table, tr, th, td {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-start;
-    background-color: rgb(179, 191, 202)
+    background-color: #59a5d8;
+    color: white;
+    font-size: large;
 
 }
 
@@ -112,12 +193,10 @@ table, tr, th, td {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-start;
-    background-color: rgb(139, 173, 182);
+    background-color: #5c9aeb;
+    color: #FFFEF2;
 }
 
-#summary {
-    width: 100%;
-}
 #town {
     width: 100%;
 }
@@ -130,28 +209,16 @@ table, tr, th, td {
 .responsive {
     width: 100%;
     height: auto;
+    float: left;
   }
+
+#text {
+    font-size: medium;
+}
 
 section {
     padding: 12px;
     margin-top: 10px;
-}
-
-.active {
-    background-color: steelblue;
-}
-
-a:active {
-    color: #ff8989;
-    text-align: center;
-    display: inline-block;
-}
-
-a:hover {
-    color: #a0a0a0;
-    text-align: center;
-    display: inline-block;
-    
 }
 
 header a:link {
@@ -176,31 +243,22 @@ footer {
     color:white;
 }
 
-
-#preston table {
-    margin: auto;
+#reserve {
+   text-decoration: underline;
+   color: royalblue;
+   text-align: center;
+   
 }
-#sodasprings table {
-    margin: auto;
-}
+#reserve a:visited {
+    color: royalblue;
+  }
 
-#fishhaven table {
-    margin: auto;
-}
 
+  footer a {
+      color: #91e5f6;
+  }
 /* class selectors */
 
-.navigation li:first-child {
-    display: block;
-}
-
-.navigation li {
-    display: none;
-}
-
-.responsive li {
-    display: block;
-}
 
 .header {
     margin-right: 7em;
@@ -211,393 +269,102 @@ footer {
 
 #website {
     font-size: 40px;
-    text-shadow: 2px 2px 3px rgb(100, 100, 100);
+    text-shadow: 2px 2px 3px rgb(32, 32, 32);
 }
 
 
+/*-------------slideshow---------------*/
 
-/*-------gallery-------*/
+* {box-sizing:border-box}
 
-#gallery figcaption {
-    font-size: 20px;
-    text-align: center;
-    font-family: 'Mukta', sans-serif;
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
 }
 
-#gallery .gallery {
-    display: grid;
-    grid-template-columns: 1fr;
-    border: none;
+/* Hide the images by default */
+.mySlides {
+  display: none;
 }
 
-#gallery img[data-src] {
-    filter: blur(0.1em);
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
 
-#gallery img {
-    filter: blur(0em);
-    transition: filter 1s;
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
 
-#gallery .navigation li {
-    display: none;
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
 }
 
-
-#gallery .grid-main {
-    margin: 0 auto;
-    max-width: 1820px;
-}
-
-#gallery .gallery img {
-    width: 100%;
-}
-
-#gallery .gallery {
-    display: grid;
-    grid-template-columns: 1fr;
-    border: none;
-}
-
-#gallery .navigation li:first-child {
-    display: block;
-}
-
-#gallery .navigation li {
-    display: none;
-}
-
-#gallery .responsive li {
-    display: block;
-}
-
-
-/*----------preston----------*/
-#preston th {
-    background-color: rgb(97, 187, 194);
-    color: white;
-  }
-
- #preston #weather-summary img {
-    width: 40%;
-    padding: 0px;
-    margin: 0;
-}
-
-
-#preston form {
-    align-items: center;
-}
-
-#preston label {
-    display: inline-block;
-    clear: left;
-    width: 150px;
-    text-align: right;
-    padding: 10px 10px 10px 0;
-}
-
-#preston input, #preston select {
-    display: inline-block;
-    padding: 3px 3px 3px 0;
-    margin: 10px;
-}
-
-#preston input[type=submit], #preston input[type=reset] {
-    margin-top: 15px;
-    cursor: pointer;
-    padding: 8px 8px;
-    background-color: #9D866B;
-    width: 80px;
-}
-
-
-
-
-
-/*----------Storm Center----------*/
-#stormcenter h3, #stormcenter p,#stormcenter td, #stormcenter span, #stormcenter address, #stormcenter figcaption, #stormcenter form{
-    font-family: 'Mukta', sans-serif;
-}
-
-#stormcenter h1,
-#stormcenter h3,
-#stormcenter figcaption{
-    text-align: center;
-}
-
-#stormcenter figcaption {
-    font-size: 20px;
-}
-
-#stormcenter main {
-    max-width: 1050px;
-    margin: 0 auto;
-    align-items: center;
-    display: grid;
-}
-
-#stormcenter section {
-    padding: 12px;
-    border: 2px dotted #9D866B;
-    margin-top: 10px;
-}
-
-#stormcenter a:active {
-    background-color: #a3b7af;
-    color: #ff8989;
-    padding: 6px 6px;
-    text-align: center;
-    display: inline-block;
-}
-
-#stormcenter a:hover {
-    color: #a0a0a0;
-    padding: 6px 6px;
-    text-align: center;
-    display: inline-block;
-}
-
-
-#stormcenter table {
-    margin-left: auto; 
-    margin-right: auto;
-    color: #82746B;
-}
-
-#stormcenter table, th, tr, td{
-    border: 1px solid black;
-    padding: 7px;
-    font-size: 20px;
-}
-
-#stormcenter table th {
-    font-family: 'Josefin Sans', sans-serif;
-}
-
-#stormcenter iframe{
-    display: none;
-}
-
-#stormcenter aside {
-    position: absolute;
-    top: 60px;
-    left: 60px;
-    background-color: #9D866B;
-    opacity: 0.67;
-    color: #f1f4f3;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-#stormcenter form {
-    align-items: center;
-}
-
-#stormcenter label {
-    display: inline-block;
-    clear: left;
-    width: 150px;
-    text-align: right;
-    padding: 10px 10px 10px 0;
-}
-
-#stormcenter input, #stormcenter select {
-    display: inline-block;
-    padding: 3px 3px 3px 0;
-    margin: 10px;
+/* Caption text */
+.text {
+  color: #ffffff;
+  font-size: 50px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
 }
-
-#stormcenter input[type=submit], #stormcenter input[type=reset] {
-    margin-top: 15px;
-    cursor: pointer;
-    padding: 8px 8px;
-    background-color: #9D866B;
-    width: 80px;
-}
-
-
-#stormcenter img[data-src] {
-    filter: blur(0.1em);
-}
-  
-#stormcenter img {
-    filter: blur(0em);
-    transition: filter 1s;
-}
-
-#stormcenter .grid-main {
-    margin: 0 auto;
-    max-width: 1820px;
-}
-
-#stormcenter .gallery img {
-    width: 100%;
-}
-
-#stormcenter .gallery {
-    display: grid;
-    grid-template-columns: 1fr;
-    border: none;
-}
-
-#stormcenter #article img {
-    float: right;
-    margin: 0 0 1em 1em;
-    width: 280px;
-}
-
-
-
-/*-------------index------------*/
-
-#index figcaption{
-    text-align: center;
-    font-size: 20px;
-}
-
-#index td, #index span, #index address, #index figcaption, #index form{
-    font-family: 'Mukta', sans-serif;
-}
-
-#index table {
-    margin-left: auto; 
-    margin-right: auto;
-    color: #82746B;
-}
-
-#index table th {
-    font-family: 'Mukta', sans-serif;
-}
-
-#index iframe{
-    display: none;
-}
-
-#index aside {
-    position: absolute;
-    top: 60px;
-    left: 60px;
-    background-color: #9D866B;
-    opacity: 0.67;
-    color: #f1f4f3;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-#index form {
-    align-items: center;
-}
-
-#index label {
-    display: inline-block;
-    clear: left;
-    width: 150px;
-    text-align: right;
-    padding: 10px 10px 10px 0;
-}
-
-#index input, #index select {
-    display: inline-block;
-    padding: 3px 3px 3px 0;
-    margin: 10px;
-}
-
-#index input[type=submit], #index input[type=reset] {
-    margin-top: 15px;
-    cursor: pointer;
-    padding: 8px 8px;
-    background-color: #9D866B;
-    width: 80px;
-}
-
-#index article {
-    box-shadow: 0 0 15px 0 #9D866B;
-    border: ridge gray;
-}
-
-#index article img {
-    width: 100%;
-}
-
-
-#index img[data-src] {
-    filter: blur(0.1em);
-}
-  
-#index img {
-    filter: blur(0em);
-    transition: filter 1s;
-}
-
-#index .grid-main {
-    margin: 0 auto;
-    max-width: 1820px;
-}
-
-#index .gallery img {
-    width: 100%;
-}
-
-#index .gallery {
-    display: grid;
-    grid-template-columns: 1fr;
-    border: none;
-}
-
-#index .grid {
-    max-width: 1500px;
-}
-
-#index .home {
-    display: grid;
-    border: none;
-    grid-column-gap: 50px;
-    text-align: center;
-}
-
-#index #website {
-    font-size: 40px;
-    text-shadow: 2px 2px 3px #82746B;
-}
-
-#index #article img {
-    float: right;
-    margin: 0 0 1em 1em;
-    width: 280px;
-}
-
-#index #hero {
-    border: none;
-    position: relative;
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
 }
 
-#index #hero img {
-    width: 100%;
-    height: auto;
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
 }
 
-#index #weather-summary {
-    position: absolute;
-    top: 60px;
-    right: 60px;
-    background-color: #9D866B;
-    opacity: 0.67;
-    color: #f1f4f3;
-    padding-left: 20px;
-    padding-right: 20px;
+.active, .dot:hover {
+  background-color: #59a5d8;
 }
 
-#index #contact {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
 
-#index #five-day {
-    display: none;
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
 
-#index #fish-name, #index #preston-name, #index #soda-springs-name {
-    text-shadow: 2px 2px 3px #82746B;
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }

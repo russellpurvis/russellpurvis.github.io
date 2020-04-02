@@ -63,25 +63,12 @@ document.querySelector('#current-date').textContent = fullDate;
 /* Hamburger*/
 
 
-const hambutton = document.querySelector(".ham");
+const hambutton = document.querySelector(".icon");
 hambutton.addEventListener("click", toggleMenu, false);
 
 function toggleMenu() {
-    document.querySelector(".navigation").classList.toggle("responsive");
+    document.querySelector(".topnav").classList.toggle("responsive");
 }
-
-
-/* Font Loader*/
-
-WebFont.load({
-    google: {
-      families: [
-        'Libre Baskerville',
-         'Mukta'
-      ]
-    }
-  });
-
 
 function getCurrentWeather(cityId) {
 
