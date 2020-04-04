@@ -52,7 +52,7 @@
             "service":{
                 "rental" : "Clothing rental available",
                 "cafeteria" : "No cafeteria available",
-                "housing" : "Patron housing available",
+                "housing" : "No Patron housing available",
                 "discCenter" : "Distribution center nearby"
                 },
             "schedule":{
@@ -124,7 +124,7 @@
             "service":{
                 "rental" : "Clothing rental available",
                 "cafeteria" : "No cafeteria available",
-                "housing" : "Patron housing available",
+                "housing" : "No Patron housing available",
                 "discCenter" : "Distribution center nearby"
                 },
             "schedule":{
