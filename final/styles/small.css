@@ -299,6 +299,27 @@ footer a {
 }
 
 
+
+/*------------------TEMPLE-----------------------*/
+
+.temple-container {
+  border-style: solid;
+  border-color: goldenrod;
+}
+.temple-container h2 {
+  background-color: darkgray;
+}
+.current-weather {
+  color: white;
+  background-color: #59a5d8;
+}
+.current-weather h3 {
+  text-decoration: underline;
+}
+
+
+
+
 /*--------------------SERVICES-------------------*/
 
 #services .container a:link,#services .container  a:visited {
