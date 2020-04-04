@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
-    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="shortcut icon" href="favicon (1).ico">
 </head>
 
 <body id="temple">
@@ -28,17 +28,17 @@
     <div class="topnav" id="myTopnav">
         <a href="index.html"><i class="fa fa-fw fa-home"></i>Home</a>
         <a href="temple.html" class="active"><i class="fa fa-fw fa-black-tie"></i>Temple</a>
-        <a href="#"><i class="fa fa-fw fa-paperclip"></i>Reservation</a>
+        <a href="reservation.html"><i class="fa fa-fw fa-paperclip"></i>Reservation</a>
         <div class="dropdown">
             <button class="dropbtn"><i class="fa fa-caret-down"></i> Services
             </button>
             <div class="dropdown-content">
-                <a href="#">Services</a>
-                <a href="#">Reception</a>
-                <a href="#">Full-time Temple Missionary</a>
+                <a href="services.html">Services</a>
+                <a href="reception.html">Reception</a>
+                <a href="full-time-temple-missionary.html">Full-time Temple Missionary</a>
             </div>
         </div>
-        <a href="#"><i class="fa fa-fw fa-user"></i>Contact</a>
+        <a href="contact.html"><i class="fa fa-fw fa-user"></i>Contact</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
     <main>
@@ -78,49 +78,53 @@
                 </div>
                 
                 <div class = "temple-data">
-                    <h3>
-                        Address
-                    </h3>
-                    <div class = "logan-utah-address"></div>
-                    <h3>
-                        Phone Number
-                    </h3>
-                    <div class = "logan-utah-phone"></div>
-                    <h3>
-                        Service
-                    </h3>
-                    <div class = "logan-utah-service"></div>
-                    <h3>
-                        Ordinance Schedule
-                    </h3>
-                    <h4>
-                        Baptism
-                    </h4>
-                    <ul class ="logan-utah-baptism">
-                        
-                    </ul>
-                    <h4>
-                        Endownment
-                    </h4>
-                    <ul class = "logan-utah-endownment">
-                    
-                    </ul>
-                    <h4>
-                        Sealing
-                    </h4>
-                    <ul class = "logan-utah-sealing">
-                        
-                    </ul>
-                    <h3>
-                        Temple Closure
-                    </h3>
-                    <ul class = "logan-utah-closure">
-                        
-                    </ul>
-                    <h3>
-                        Temple History
-                    </h3>
-                    <div class = "logan-utah-history"></div>
+                    <p id="text"> 
+                        <h3>Address</h3>
+                       <address> 175 N 300 E <br>
+                        Logan UT 84321-4720 <br>
+                        United States <br> </address>
+                        <h3>Phone Number</h3>
+                        <a href="tel:+1435-752-3611">(1) 435-752-3611</a> <br>
+                        <h3>E-mail</h3>
+                        <a href="mailto:logantemple@church.com">logantemple@church.com</a> <br>
+                        <h3>Services</h3>
+                        Clothing rental available <br>
+    Cafeteria available <br>
+    No patron housing available <br>
+    No distribution center nearby <br>
+                        <h3>History</h3>
+                        <b>Announced:</b> 6 October 1876 <br>
+                        <b>Groundbreaking:</b> 18 May 1877 <br>
+                        <b>Dedicated:</b> 17 May 1884 <br>
+                        <b>Rededicated:</b> 13 March 1979 <br>
+                        <h3>Ordinance Schedule</h3>
+                        <b>Baptism</b> <br>
+                        <ul>
+                            <li>
+                                5:30 AM-7:00 AM
+                            </li>
+                            <li>
+                                7:00 AM-7:30 PM
+                            </li>
+                        </ul>
+                        <b>Endowment</b>
+                        <ul>
+                            <li>Every Half hour from 5:30 AM to 7:30 PM</li>
+                        </ul>
+                        <b>Sealing</b>
+                        <ul>
+                            <li>7:00 AM-9:15 AM</li>
+                            <li>9:30 AM-12:45 PM</li>
+                            <li>1:00 PM-2:15 PM</li>
+                            <li>2:30 PM-3:29 PM</li>
+                            <li>3:30 PM-8:00 PM</li>
+                        </ul>
+    
+                        <section id="cityEvents"><h3>Temple Closure</h3>
+                        <hr>
+                        <ul id="logan-closure">
+                        </ul>
+                    </section>
                 </div>
             </div>
             
@@ -178,17 +182,6 @@
                     <span class="dot" onclick="currentSlide(7)"></span>
                   </div>
         </section>
-        <h3></h3>
-        <section id="article">
-            
-            <p>
-                The Temple is Centered in the Savior
-
-                Everything in the temple points us to Jesus Christ. As we participate in temple ordinances, we are assured that He is mindful of us. He is involved in our lives and He is dedicated to our eternal happiness. His presence can be felt as we strive to follow Him in our daily lives. As we draw closer to the Savior, we learn more about Him. His life provides a perfect pattern of righteousness and happiness for all of us.
-
-            </p>
-            <img src="images/index-temple.jpg" alt="temple" id="town">
-        </section>
 
     </main>
 
@@ -197,7 +190,7 @@
 
     </footer>
     <script src="scripts/main.js"></script>
-    <script src="scripts/towndata.js"></script>
+    <script src="scripts/templedata.js"></script>
     <script src="scripts/slide.js"></script>
 
 </body>

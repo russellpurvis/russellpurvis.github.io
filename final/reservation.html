@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Temple Inn & Suites</title>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&family=Merriweather&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="shortcut icon" href="favicon (1).ico">
+</head>
+
+<body id="reservation">
+    <header>
+        <a href="index.html"><img src="images/temple-logo.png" alt="temple logo"> </a>
+        <div class="header">
+            <h1 id="website">Temple Inn & Suites</h1>
+            <h2>Acommodations for a Spirit-Filled Day</h2>
+        </div>
+
+    </header>
+    <div class="topnav" id="myTopnav">
+        <a href="index.html"><i class="fa fa-fw fa-home"></i>Home</a>
+        <a href="temple.html"><i class="fa fa-fw fa-black-tie"></i>Temple</a>
+        <a href="reservation.html" class="active"><i class="fa fa-fw fa-paperclip"></i>Reservation</a>
+        <div class="dropdown">
+            <button class="dropbtn"><i class="fa fa-caret-down"></i> Services
+            </button>
+            <div class="dropdown-content">
+                <a href="services.html">Services</a>
+                <a href="reception.html">Reception</a>
+                <a href="full-time-temple-missionary.html">Full-time Temple Missionary</a>
+            </div>
+        </div>
+        <a href="contact.html"><i class="fa fa-fw fa-user"></i>Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+    <main class="form">
+
+        <h2>Reservation</h2>
+        <div class="container">
+            <form>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="dateFrom">Start Date* </label>
+                    </div>
+                    <div class="col-75">
+                        <input type="date" id="dateFrom" name="dateFrom" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="dateTo">End Date* </label>
+                    </div>
+                    <div class="col-75">
+                        <input type="date" id="dateTo" name="dateTo" required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="location">Location:*</label>
+                    </div>
+                    <div class="col-75">
+                        <select id="location" name="location" required>
+                            <option selected disabled>Select Hotel Location ...</option>
+                            <option value="Billings, Montana">Billings, Montana</option>
+                            <option value="Laie, Hawaii">Laie, Hawaii, United States</option>
+                            <option value="Quito, Equador">Quito, Equador</option>
+                            <option value="Spokane, Washington">Spokane, Washington, United States</option>
+                            <option value="Winnipeg, Manitoba, Canada">Winnipeg, Manitoba, Canada</option>
+                            <option value="Vasterhaninge, Sweden">Vasterhaninge, Sweden</option>
+                            <option value="Atsubetsu-ku Sapporo, Hokkaido, Japan">Atsubetsu-ku Sapporo, Hokkaido, Japan
+                            </option>
+                            <option value="Salt Lake City, Utah">Salt Lake City, Utah, United States</option>
+                            <option value="São Paulo, Sao Paulo, Brazil">São Paulo, Sao Paulo, Brazil</option>
+                            <option value="Logan, Utah">Logan, Utah, United States</option>
+                            <option value="Chorley, Lancashire, England">Chorley, Lancashire, England</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname">Full Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="fname" name="fullname" placeholder="Your name.." required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="fname">Email</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="email" id="email" name="email" placeholder="user@email.com" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="phone">Phone</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="tel" id="phone" name="phone" placeholder="012-345-6789" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="homeState">Home State*</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="homeState" name="homeState" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="homeCountry">Home Country*</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="homeCountry" name="homeCountry" required>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <h2>Add room</h2>
+
+        <div class="container">
+            <form>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="roomType">Room Type:*</label>
+                    </div>
+                    <div class="col-75">
+                        <select required name="roomType" id="roomType">
+                            <option selected disabled>Select Room Type ...</option>
+                            <option value="Single">Single</option>
+                            <option value="Double">Double</option>
+                            <option value="Long Term">Long Term</option>
+                            <option value="Missionary">Missionary</option>
+                            <option value="Master Suite">Master Suite</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="guestAdult">Adult Guests in Room:* </label>
+                    </div>
+                    <div class="col-75">
+                        <select required name="guestAdult" id="guestAdult">
+                            <option value="" disabled></option>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="guestChildren">Chilren Guests in Room:* </label>
+                    </div>
+                    <div class="col-75">
+                        <select required name="guestChildren" id="guestChildren">
+                            <option value="" disabled></option>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <input class="add_room" type="button" value="Add room">
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="comments">Special Acommodations/Comments:</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="subject" name="subject" placeholder="Write something.."
+                            style="height:200px"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <input type="submit" value="Submit">
+                </div>
+                
+        </form>
+
+        </div>
+    </main>
+
+    <footer>
+        &copy; The Temple Inn & Suites | <span id="current-date"></span> | John Purvis | <a
+            href="references">References</a>
+
+    </footer>
+    <script src="scripts/main.js"></script>
+
+</body>
+
+</html>

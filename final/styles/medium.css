@@ -31,4 +31,25 @@
     #town {
         width: 40%;
     }
+    .temple-info {
+        display: grid;
+        grid-template-columns: 1.5fr 2fr;
+        column-gap: 20pt;
+    }
+    #reservation .mainarea{
+        display: flex;
+        justify-items: center;
+        vertical-align: top;
+    }
+
+    .services{
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20pt;
+    }
+   #reception .w3-container {
+        display:grid;
+        grid-template-columns: 1.5fr 2fr;
+        column-gap: 20pt;
+
+    }
 }

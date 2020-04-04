@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Temple Inn & Suites</title>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&family=Merriweather&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="shortcut icon" href="favicon (1).ico">
+</head>
+
+<body id="services">
+    <header>
+        <a href="index.html"><img src="images/temple-logo.png" alt="temple logo"> </a>
+        <div class="header">
+            <h1 id="website">Temple Inn & Suites</h1>
+            <h2>Acommodations for a Spirit-Filled Day</h2>
+        </div>
+
+    </header>
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" ><i class="fa fa-fw fa-home"></i>Home</a>
+        <a href="temple.html"><i class="fa fa-fw fa-black-tie"></i>Temple</a>
+        <a href="reservation.html"><i class="fa fa-fw fa-paperclip"></i>Reservation</a>
+        <div class="dropdown">
+        <button class="dropbtn"><i class="fa fa-caret-down"></i> Services
+            </button>
+            <div class="dropdown-content">
+                <a href="services.html" class="active">Services</a>
+                <a href="reception.html">Reception</a>
+                <a href="full-time-temple-missionary.html">Full-time Temple Missionary</a>
+            </div>
+        </div>
+        <a href="contact.html"><i class="fa fa-fw fa-user"></i>Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+    <main>
+        <h1>Free Amenities</h1>
+        <section>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 7</div>
+                    <img src="images/breakfast.jpg" style="width:100%">
+                    <div class="text">Breakfast</div>
+                  </div>
+                
+                  <div class="mySlides fade">
+                    <div class="numbertext">2 / 7</div>
+                    <img src="images/gym.jpg" style="width:100%">
+                    <div class="text">Exercise/Workout Room</div>
+                  </div>
+                
+                  <div class="mySlides fade">
+                    <div class="numbertext">3 / 7</div>
+                    <img src="images/indoor-pool.jpg" style="width:100%">
+                    <div class="text">Indoor Pool</div>
+                  </div>
+                  <div class="mySlides fade">
+                    <div class="numbertext">4 / 7</div>
+                    <img src="images/wifi.jpg" style="width:100%">
+                    <div class="text">High-speed Wifi and Smart TV's</div>
+                  </div>
+                  <div class="mySlides fade">
+                    <div class="numbertext">5 / 7</div>
+                    <img src="images/parking.jpg" style="width:100%">
+                    <div class="text">Parking </div>
+                  </div>
+                  <div class="mySlides fade">
+                    <div class="numbertext">6 / 7</div>
+                    <img src="images/shuttle.jpg" style="width:100%">
+                    <div class="text">Temple Shuttle</div>
+                  </div>
+                  <div class="mySlides fade">
+                    <div class="numbertext">7 / 7</div>
+                    <img src="images/family-history.jpg" style="width:100%">
+                    <div class="text">Family History and ordinance card service</div>
+                  </div>
+                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                    <span class="dot" onclick="currentSlide(7)"></span>
+                  </div>
+        </section>
+
+
+        <section class = "container" id = "wedding">
+            <h1>Wedding Receptions</h1>
+            <div class ="temple-info">
+                <div class = "first-column">
+                    <img src="images/wedding-reception (2).jpg" alt="Wedding Reception">
+                </div>
+                
+                <div class = "wedding-data">
+                    <p id="text"> 
+                        Temple Inn & Suite provides a wedding reception hall that can be easily customized with a simple catering menu and kitchen access for food preparation and serving.
+                    </p>
+                    <a href="reception.html">Learn More</a>
+                </div>
+            </div>
+            
+        </section>
+
+        <section class = "container" id = "missionary">
+            <h1>Full-time Temple Missionary</h1>
+            <div class ="missionary-info">
+                <div class = "first-column">
+                    <img src="images/philippines-cebu-temple-missionaries.jpg" alt="Full-time Temple Missionary">
+                </div>
+                
+                <div class = "missionary-data">
+                    <p id="text"> 
+                        Long-term stay accommodations in kitchenette suites for full-time temple missionaries. 
+                    </p>
+                    <a href="full-time-temple-missionary.html">Learn More</a>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+
+    <footer>
+        &copy; The Temple Inn & Suites | <span id="current-date"></span> | John Purvis | <a href="references">References</a>
+
+    </footer>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/slide.js"></script>
+
+</body>
+
+</html>
