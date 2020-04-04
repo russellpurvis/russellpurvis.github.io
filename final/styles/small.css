@@ -190,10 +190,6 @@ main {
 }
 
 
-/*.weather-summary {
-  color: white;
-  background-color: black;
-}*/
 
 #article {
   display: flex;
@@ -333,6 +329,11 @@ footer a {
 
 #services .container a:hover, #services .container a:active {
   background-color: #59a5d8;
+}
+
+#services .container .text {
+  color: black;
+  font-size: 18pt;
 }
 
 

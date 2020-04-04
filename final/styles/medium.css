@@ -52,4 +52,7 @@
         column-gap: 20pt;
 
     }
+    #index ul { padding: 2em;
+
+    }
 }
