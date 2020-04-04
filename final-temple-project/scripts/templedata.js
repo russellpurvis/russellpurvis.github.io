@@ -21,6 +21,7 @@ function templeData() {
                 }
 
                 let phoneLink = '<a href="tel:'+ templeList[i].phone +'">'+ templeList[i].phone + '</a>';
+                let emailLink = '<a href="email:'+ templeList[i].email +'">'+ templeList[i].email + '</a>';
 
                 let service = "<p>" + templeList[i].service.rental + "</p><p>" + templeList[i].service.cafeteria + "</p><p>" + templeList[i].service.housing + "</p><p>" + templeList[i].service.discCenter + "</p>";
                 
@@ -66,6 +67,7 @@ function templeData() {
                 
                 document.querySelector("." + templeName + "-address").innerHTML = address;
                 document.querySelector("." + templeName + "-phone").innerHTML = phoneLink;
+                document.querySelector("." + templeName + "-email").innerHTML = emailLink;
                 document.querySelector("." + templeName + "-service").innerHTML = service;
                 document.querySelector("." + templeName + "-baptism").innerHTML = baptism;
                 document.querySelector("." + templeName + "-endownment").innerHTML = endownment;

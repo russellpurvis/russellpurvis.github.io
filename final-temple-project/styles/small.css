@@ -303,7 +303,7 @@ footer a {
   border-color: goldenrod;
 }
 .temple-container h2 {
-  background-color: darkgray;
+  text-align: center;
 }
 .current-weather {
   color: white;

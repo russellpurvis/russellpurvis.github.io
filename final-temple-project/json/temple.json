@@ -5,6 +5,7 @@
             "location": "Logan, Utah, USA",
             "address": "175 N 300 E, Logan UT 84321-4720, United States",
             "phone" : "(1) 435-752-3611",
+            "email" : "logantemple@email.com",
             "history" :{
                 "announced" : "6 October 1876",
                 "groundbreaking" : "18 May 1877",
@@ -43,6 +44,7 @@
             "location": "Laie, Hawaii, USA",
             "address": "55-600 Naniloa Loop, Laie HI 96762-2202, United States",
             "phone" : "(1) 808-293-2427",
+            "email" : "laietemple@email.com",
             "history" :{
                 "announced" : "3 October 1915",
                 "groundbreaking" : "8 February 1916",
@@ -80,6 +82,7 @@
             "location": "Barranquilla, Colombia",
             "address": "Carrera 51B #133-120, Villa Campestre, Barranquilla Atlantico, Colombia",
             "phone" : "(57) 5-310-0200",
+            "email" : "barranquillatemple@email.com",
             "history" :{
                 "announced" : "4 April 1997",
                 "groundbreaking" : "20 June 1998",
@@ -116,6 +119,7 @@
             "location": "Albuquerque, New Mexico, USA",
             "address": "10301 San Francisco Rd NE, Albuquerque NM 87122-3437, United States",
             "phone" : "(1) 505-822-5110",
+            "email" : "abqtemple@email.com",
             "history" :{
                 "announced" : "4 October 2008",
                 "groundbreaking" : "23 October 2010",
