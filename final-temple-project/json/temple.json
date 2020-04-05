@@ -14,7 +14,7 @@
             },
             "service":{
                 "rental" : "Clothing rental available",
-                "cafeteria" : "No cafeteria available",
+                "cafeteria" : "Cafeteria available",
                 "housing" : "No patron housing available",
                 "discCenter" : "No distribution center nearby"
                 },
@@ -80,7 +80,7 @@
         {
             "name": "Barranquilla Colombia Temple",
             "location": "Barranquilla, Colombia",
-            "address": "Carrera 51B #133-120, Villa Campestre, Barranquilla Atlantico, Colombia",
+            "address": "Carrera 46 via al mar pr 107, Sentido: de Barranquilla a Cartagena, Barranquilla Atlantico, Colombia",
             "phone" : "(57) 5-310-0200",
             "email" : "barranquillatemple@email.com",
             "history" :{
@@ -89,7 +89,7 @@
                 "dedicated" : "5 March 2000"
             },
             "service":{
-                "rental" : "Clothing rental available",
+                "rental" : "No Clothing rental available",
                 "cafeteria" : "No cafeteria available",
                 "housing" : "No patron housing available",
                 "discCenter" : "Distribution center nearby"
@@ -121,9 +121,9 @@
             "phone" : "(1) 505-822-5110",
             "email" : "abqtemple@email.com",
             "history" :{
-                "announced" : "4 October 2008",
-                "groundbreaking" : "23 October 2010",
-                "dedicated" : "10 March 2019"
+                "announced" : "4 April 1977",
+                "groundbreaking" : "20 June 1998",
+                "dedicated" : "5 March 2000"
             },
             "service":{
                 "rental" : "Clothing rental available",
