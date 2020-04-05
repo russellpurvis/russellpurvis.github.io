@@ -235,9 +235,7 @@ main {
 }
 
 
-.text {
-  font-size: medium;
-}
+
 
 section {
   padding: 12px;
@@ -392,7 +390,7 @@ footer a {
 /* Caption text */
 .text {
   color: #ffffff;
-  font-size: 50px;
+  font-size: large;
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;
